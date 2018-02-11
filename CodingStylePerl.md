@@ -61,7 +61,7 @@ We aren't dirty hippies, so we don't use emacs.
 Do use a style similar to K&R style, not the same. The following example is the best guide:
 
 *Do:*
-
+```perl
     sub foo {
 
        my ($self, $cond, $baz, $taz) = @_;
@@ -74,9 +74,9 @@ Do use a style similar to K&R style, not the same. The following example is the 
   
        return $self;
     }
-
+```
 *Do not:*
-
+```perl
     sub foo
     {
        my ($self,$bar,$baz,$taz)=@_;
@@ -87,7 +87,7 @@ Do use a style similar to K&R style, not the same. The following example is the 
        else { $self->foo ("one",2,"..."); }
        return $self;
     }
-
+```
 ### Lists and Arrays: ###
 
 Whenever you create a list or an array, always add a comma after the last item. The reason for doing this is that it's highly probable that new items will be appended to the end of the list in the future. If the comma is missing and this isn't noticed, there will be an error.
