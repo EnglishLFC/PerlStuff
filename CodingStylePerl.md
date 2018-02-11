@@ -1,13 +1,3 @@
-Title:	CodingStylePerl
-Tags:	Perl, Coding, Style
-Author:	Nigel Houghton <wutang@warpten.net>
-Date:	2010-03-09
-Subject:	Perl Coding Style
-Base Header Level:	2
-Copyright:	Nigel Houghton
-Language:	English
-Confidentiality:	Public
-CSS:	/style/github.css
 
 This document outlines the required elements of any script, module or application along with the coding style
 
