@@ -1,0 +1,59 @@
+# Perltidy config file
+# 
+# Usage:
+# Copy to ~/.perltidyrc
+#
+# $Id: $
+#
+
+# no line wrap
+-l=0
+# Indent level should be two columns
+-i=2
+# opening braces right
+-bar
+# Do not put braces on a new line
+-nbl
+# Except for sub routines
+-nsbl
+
+# Styles for non-block containers
+-lp    # <- this is pretty but not so great for deep structures, needs some testing to decide on preference
+-vt=1  # <- new line for anything coming after a paren, used with -lp option above
+-cti=1 # <- line up closing paren with the opener, better option when using -lp
+-vtc=1 # <- line up closing bracket with closing paren, vertical alignment, looks better when using -cti
+
+# tighten up containers
+-pt=2 # <- tighten up horizontal space within set of container tokens, default is -pt=1
+# Example:
+# if ((my $foo = length($bar)) > 0) { ...
+-sbt=2 # <- same as -pt but for sqare parens
+# Example:
+# $foo = $bar[$i + $j] - $bar[$i];
+-bt=2  # <- same as -pt but for curly braces
+# Example:
+# $obj->{$did_stuff->{'foo'}[0]};
+-bbt=2 # <- same as -pt but for code block curly braces
+# Example:
+# %foo = map{$_ => $bar} grep {baz} join ',';
+
+# Function names and parens
+# default value is no-space
+# myfunc( $a, $b, $c );
+
+# Perl keywords and parens
+# default value is no-space
+# $a = pop(@b);
+
+# Statement termination
+# default is no-space
+# $i = 1;
+
+# For-loop semicolons
+-nsfs # <- no spaces between items and their semi-colons
+# Example:
+# for ( @a = foo; @b = bar; ) { ...
+
+# Do not outdent long lines
+-nolq # <- stops long lines being automatically placed back at the left
+
