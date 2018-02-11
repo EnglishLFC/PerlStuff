@@ -394,6 +394,6 @@ The `skeletons.vim` macro must be in `~/.vim/macros/`, the skeleton templates ar
 
 [Perltidy RC for Download](https://github.com/EnglishLFC/PerlStuff/blob/master/perltidyrc)
 
-[Skeleton File for Download](https://github.com/EnglishLFC/PerlStuff/blob/master/skeleton.vim)
+[Skeleton File for Download](https://github.com/EnglishLFC/PerlStuff/blob/master/default.pl)
 
 
