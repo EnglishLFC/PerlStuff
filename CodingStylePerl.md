@@ -389,11 +389,26 @@ To use the skeleton plugin, the following must be present in your `.vimrc`
 
 The `skeletons.vim` macro must be in `~/.vim/macros/`, the skeleton templates are expected to be in `~/.vim/skeletons/`
 
+In your shell's environment (however you do that for your shell, in zsh
+you might use a .zshenv sourced from .zshrc), you need the following:
+
+```zsh
+VIM_USER_NAME="Your Name <youremail@yourdomain.com>"
+export VIM_USER_NAME
+VIM_COPYRIGHT="(c) Something here $YDATE"
+export VIM_COPYRIGHT
+VIM_USER_TITLE="Your Title, If you want"
+export VIM_USER_TITLE
+VIM_USER_EMAIL="<youremail@yourdomain.com>"
+export VIM_USER_EMAIL
+VIM_DATE=`date +"%B %Y"`
+export VIM_DATE
+```
 
 [Vim RC file for Download](https://github.com/EnglishLFC/PerlStuff/blob/master/vimrc)
 
 [Perltidy RC for Download](https://github.com/EnglishLFC/PerlStuff/blob/master/perltidyrc)
 
-[Skeleton File for Download](https://github.com/EnglishLFC/PerlStuff/blob/master/default.pl)
+[Skeleton Template File for Download](https://github.com/EnglishLFC/PerlStuff/blob/master/default.pl)
 
 
