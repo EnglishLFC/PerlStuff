@@ -94,19 +94,23 @@ Whenever you create a list or an array, always add a comma after the last item. 
 
 *Do:*
 
+```perl
     my @list = (
         "item1",
         "item2",
         "item3",
     );
+```
 
 *Do not:*
 
+```perl
     my @list = (
         "item1",
         "item2",
         "item3"
     );
+```
 
 **Last Statement in the Block**
 
@@ -114,19 +118,23 @@ The same goes for `;` in the last statement of the block. Almost always add it e
 
 *Do:*
 
+```perl
     sub foo {
         statement1;
         statement2;
         statement3;
     }
+```
 
 *Do not:*
 
+```perl
     sub foo {
         statement1;
         statement2;
         statement3
     }
+```
 
 ### Calling system: ###
 
@@ -138,9 +146,11 @@ Line up corresponding things vertically.
 
 *Example:*
 
+```perl
     do_this_thing_here or die "can't do this thing: "     . $!;
     do_something_else  or die "can't do something else: " . $!;
     do_whatever        or die "can't do whatever: "       . $!;
+```
 
 ### Error handling with die() ###
 
@@ -148,13 +158,17 @@ Do not put \n in die() messages.  It removes useful file/line info that otherwis
 
 *Example:*
 
+```perl
     $ perl -e 'die("I died")'
     I died at -e line 1.
+```
 
 v.s.
 
+```perl
     $ perl -e 'die("I died\n")'
     I died
+```
 
 
 ### Printing to wherever: ###
@@ -163,27 +177,35 @@ Use `print<<__TOHERE;` with `__TOHERE` instead of repeated `print` statements.
 
 *Do:*
 
+```perl
     print<<__TOHERE;
     The stuff I want to print
     All goes inside
     this block
     __TOHERE
+```
 
 *Do not:*
 
+```perl
     print "The stuff I want to print\n";
     print "All goes inside\n";
     print "this block\n";
+```
 
 Try to use the `. "\n"` where a newline is needed in a `print` statement. Do not put `$variables` inside quotes for printing. For example:
 
 *Do:*
 
+```perl
     print "My variable is: " . $variable . "\n";
+```
 
 *Do not:*
 
+```perl
     print "My variable is: $variable\n";
+```
 
 Where output formatting is required, try to use a template for the output. Thus, if changes are required they need only be made to the template.
 
@@ -193,12 +215,14 @@ In loops, try to use `last` to exit the loop. Try to use `for` and `foreach` ins
 
 *Example:*
 
+```perl
     foreach my $line(@file) {
         do things;
         last $line if $something;
         next $line if $somethingelse;
         do other things;
     }
+```
 
 ### Parentheses: ###
 
@@ -206,11 +230,15 @@ Use parens, even if they are not needed. For example:
 
 *Do:*
 
+```perl
     print(reverse (sort num(values(%hash))));
+```
 
 *Do not:*
 
+```perl
     print reverse sort num values %hash;
+```
 
 ### Subroutines: ###
 
