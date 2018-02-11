@@ -390,8 +390,10 @@ To use the skeleton plugin, the following must be present in your `.vimrc`
 The `skeletons.vim` macro must be in `~/.vim/macros/`, the skeleton templates are expected to be in `~/.vim/skeletons/`
 
 
-[Vim RC file for Download](link to vimrc snippet)
-[Perltidy RC for Download](link to perltidyrc)
-[Skeleton File for Download](link to skeleton.vim)
+[Vim RC file for Download](https://github.com/EnglishLFC/PerlStuff/blob/master/vimrc)
+
+[Perltidy RC for Download](https://github.com/EnglishLFC/PerlStuff/blob/master/perltidyrc)
+
+[Skeleton File for Download](https://github.com/EnglishLFC/PerlStuff/blob/master/skeleton.vim)
 
 
