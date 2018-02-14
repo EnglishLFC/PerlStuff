@@ -379,7 +379,7 @@ be in all Perl scripts:
 
     =head1 COPYRIGHT
 
-    Sourcefire (c) Inc. YYYY
+    Your Copyright Here (c) Inc. YYYY
 
 That's the bare outline for a Perl script. This can be used as a skeleton template that will auto-populate most of the information from shell environment variables.
 
